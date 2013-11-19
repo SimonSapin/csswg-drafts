@@ -383,7 +383,7 @@ Module interactions</h3>
 
 	<p>
 		This module extends the definition of the 'display' property [[!CSS21]],
-		adding a new block-level and new inline-level display type,
+		adding a new block-level and a new inline-level display type,
 		and defining a new type of formatting context
 		along with properties to control its layout.
 		None of the properties defined in this module apply to the ''::first-line'' or ''::first-letter'' pseudo-elements.
@@ -484,11 +484,11 @@ Flex Containers: the <a href="#display-flex">''flex''</a> and <a href="#display-
 	<dl dfn-type=value dfn-for=display>
 		<dt><dfn>flex</dfn>
 		<dd>
-			This value causes an element to generate a block-level <i>flex container</i> box.
+			This value causes an element to generate a <a href="http://www.w3.org/TR/CSS2/visuren.html#x5">block-level</a> <i>flex container</i> box.
 
 		<dt><dfn>inline-flex</dfn>
 		<dd>
-			This value causes an element to generate an inline-level <i>flex container</i> box.
+			This value causes an element to generate an <a href="http://www.w3.org/TR/CSS2/visuren.html#x11">inline-level</a> <i>flex container</i> box.
 	</dl>
 
 	<p>
@@ -503,13 +503,13 @@ Flex Containers: the <a href="#display-flex">''flex''</a> and <a href="#display-
 
 
 	<p>
-		Flex containers are not block containers,
+		Flex containers are not <a href="http://www.w3.org/TR/CSS21/visuren.html#block-container-box">block containers</a>,
 		and so some properties that were designed with the assumption of block layout don't apply in the context of flex layout.
 		In particular:
 
 	<ul>
 		<li>
-			all of the 'column-*' properties in the Multicol module have no effect on a flex container.
+			all of the 'column-*' properties in the Multicol module [[CSS3COL]] have no effect on a flex container.
 
 		<li>
 			'float' and 'clear' have no effect on a <i>flex item</i>.
