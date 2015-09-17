@@ -9,4 +9,4 @@ for name in os.listdir('.'):
         os.chdir(path)
         if os.path.isfile('Overview.bs') and not os.path.isfile('Overview.html'):
             print('Bikeshedding %s…' % name)
-            os.system('bikeshed')
+            os.system('bikeshed -f spec')
